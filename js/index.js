@@ -1,3 +1,29 @@
+function myFunction() {
+    var x = document.querySelector(".main-nav");
+    if (x.classList.contains("responsive")) {
+        x.classList.remove("responsive");
+    } else {
+        x.classList.add("responsive");
+    }
+
+    // Adjust the layout of li elements in column mode
+    var navList = document.querySelector(".nav-list");
+    var liElements = navList.querySelectorAll("li");
+
+    if (x.classList.contains("responsive")) {
+        // If responsive class is active, set li elements to display block
+        liElements.forEach(function (li) {
+            li.style.display = "block";
+        });
+    } else {
+        // If responsive class is not active, reset li elements display property
+        liElements.forEach(function (li) {
+            li.style.display = "";
+        });
+    }
+}
+
+
 // slider
 let currentIndex = 0;
 const slider = document.getElementById('slider');
@@ -86,3 +112,27 @@ document.addEventListener("DOMContentLoaded", function () {
     handleScroll();
 });
 
+
+function showMessage() {
+    const notifDatabase = document.querySelector('.notif-database'); // Tambah titik (.)
+    const imgServer = document.querySelector('.graph-index img'); // Sesuaikan pemilihan elemen
+    imgServer.style.display = 'none';
+    notifDatabase.style.display = 'flex'; // Ganti block dengan flex
+}
+
+
+function tampilkanHasil() {
+    var userName = document.getElementById('userName').value;
+    var tanggal = document.getElementById('tanggal').value;
+    var jenisKelamin = document.getElementById('jenisKelamin').value;
+    var pesan = document.getElementById('pesan').value;
+
+    var hasilOutput = `
+        <p><strong>User Name:</strong> ${userName}</p>
+        <p><strong>Tanggal:</strong> ${tanggal}</p>
+        <p><strong>Jenis Kelamin:</strong> ${jenisKelamin}</p>
+        <p><strong>Pesan:</strong> ${pesan}</p>
+    `;
+
+    document.getElementById('hasilOutput').innerHTML = hasilOutput;
+}
