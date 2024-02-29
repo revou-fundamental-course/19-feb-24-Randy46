@@ -5,65 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Perusahaan Hiburan XYZ</title>
+    <title>InfoVine</title>
 </head>
 <body>
     <header class="main-header">
         <div class="logo-container">
             <img src="asset\Img\OIP.jpeg" alt="Perusahaan Hiburan XYZ Logo" class="logo-img">
-            <h1 class="logo-text">InfoAnggur Co., Ltd</h1>
+
         </div>
         <nav class="main-nav">
             <ul class="nav-list">
                 <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#layanan">Layanan</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#layanan">Business</a></li>
+                <li><a href="#portofolio"> investor relations</a></li>
                 <li><a href="#kontak">Kontak</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a></li>
             </ul>
         </nav>
     </header>
+    
+    <main>
+        <section>
+            <div class="slider-container">
+                <ul class="slider" id="slider">
+                    <li class="slider-item">
+                        <img src="asset\Img\section01.jpg" alt="Slide 1">
+                        <span class="animated-text"><img src="asset\Img\section01_01_text.png"></span>
+                    </li>
+                    <li class="slider-item">
+                        <img src="asset\Img\section02.jpg" alt="Slide 2">
+                        <span class="animated-text">it's the safest
+                            More convenient service</span>
+                    </li>
+                    <li class="slider-item">
+                        <img src="asset\Img\section03.jpg" alt="Slide 3">
+                        <span class="animated-text">While in the dash gear, 
+                            Super Pass ensures the secure management of your travel requirements, providing both comfort and security</span>
+                    </li>
+                    <li class="slider-item">
+                        <img src="asset\Img\section04.jpg" alt="Slide 4">
+                        <span class="animated-text">A world of value and togetherness is created by InfoVine Entertainment</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    
+        <article class="section01">
+            <div class="vision">
+                <img src="asset/Img/tiitle visi.png" class="title-vision01">
+                <p class="noted-vision01">
+                    InfoVine started as an online business aiming to 'provide services that are truly desired and
+                </p>
+                <br>
+                <p class="noted-vision02">
+                    needed by customers.' Mobile, security, gaming, entertainment— with us, we are making history
+                </p>
+            </div>
+        </article>
 
-    <section>
-        <div class="slider-container">
-            <ul class="slider" id="slider">
-                <li class="slider-item">
-                    <img src="asset\Img\OIP.jpeg" alt="Slide 1">
-                    <span class="animated-text">This is Naruto</span>
-                </li>
-                <li class="slider-item">
-                    <img src="asset\Img\back-buttom.jpeg" alt="Slide 2">
-                    <span class="animated-text">This is Sasuke</span>
-                </li>
-                <li class="slider-item">
-                    <img src="asset\Img\next-buttom.jpeg" alt="Slide 3">
-                    <span class="animated-text">This is Reborn Boruto</span>
-                </li>
-                <li class="slider-item">
-                    <img src="asset\Img\maxresdefault.jpg" alt="Slide 4">
-                    <span class="animated-text">This is Reborn saskkeh</span>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <article class="section02">
+            <div class="produk1">
+                <div class="merek">
+                    <img src="asset\Img\Ubikeyy.jpeg" alt="Ubikey">
+                    <div class="noted-merek">
+                        <h1>Ubikey</h1>
+                        <h2>Business</h2>
+                        <br>
+                        <p>After saving the certificate to the mobile phone once, there is a separate additional tool in addition to the mobile phone.
+                            Without wired or wireless internet, every time you use a certificate to your computer
+                            It is a service that transmits and performs the authentication process on your computer.</p>
+                    </div>   
+                </div>
+            </div>
+            <div class="produk2">
+                <div class="merek">
+                    <img src="asset\Img\SuperPass.jpeg" alt="SuperPass">
+                    <div class="noted-merek">
+                        <h1>SuperPass</h1>
+                        <h2>Business</h2>
+                        <br>
+                        <p>With a one-time ID/PW registration in the smartphone app, the mobile app and
+                            A service that allows you to log in easily and securely from your PC browser (app)
+                            Is.</p>
+                    </div>                
+                </div>
+            </div>
+            <div class="produk3">
+                <div class="merek">
+                    <img src="asset\Img\Vine.ent.jpeg" alt="vine.ent">
+                    <div class="noted-merek">
+                        <h1>Vine</h1>
+                        <h2>Entertainment</h2>
+                        <br>
+                        <p>Vine Entertainment is a management company that discovers and nurtures stars who can advance to the world stage like Vine, which has infinite scalability.
+                            We plan and produce music, movies, and dramas to grow into a global entertainment that stands tall as a leader in new pop culture.
+                            It was established with the goal</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="sectionBar">
+            <h1> Investor Relations </h1>
+        </article>
+
+        <article class="section03">
+            <div class="graph-index">
+                <img src="asset\Img\reload-database.png" alt="Reload " onclick="showMessage()">
+            </div>
+            <div class="notif-database">
+                <h1>500</h1>
+                <h2>Internal Server Error</h2>
+            </div>
+        </article>
+    
+        
+        <section class="section04">
+            <div class="container">
+                <h1>Customer Service</h1>
+                <div class="container-card">
+                    <form id="myForm">
+                        <label for="userName">User Name:</label>
+                        <input type="text" id="userName" name="username" required>
+        
+                        <label for="tanggal">Tanggal:</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+        
+                        <label for="jenisKelamin">Jenis Kelamin:</label>
+                        <select id="jenisKelamin" name="jenisKelamin" required>
+                            <option value="pria">Pria</option>
+                            <option value="wanita">Wanita</option>
+                        </select>
+        
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+        
+                        <button type="button" onclick="tampilkanHasil()">Submit</button>
+                    </form>
+        
+                    <div class="hasil" id="hasilOutput"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     
 
-    <article class="animated-section">
-        <div class="section02 animation-element">
-            <!-- <h2 class="title01"><img src="asset\Img\Secret_Number_Logo_Black.png" alt="Logo"></h2> -->
-            <p>
-                <span class="title02r">
-                    make tour spirit
-                </span>
-                <br>
-                <span class="title02r">
-                   for new era
-                </span>
-            </p>
-        </div>
-    </article>
-
     <footer>
-        <p>&copy; 2024 Perusahaan Hiburan XYZ. Hak Cipta Dilindungi.</p>
+        <p>&copy; 2024 InfoVine</p>
     </footer>
     <script src="js/index.js"></script>
 </body>
