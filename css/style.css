@@ -111,7 +111,7 @@ body {
     -o-transition: background-color 0.3s;
 }
 
-/* Hover effect on desktop */
+/* Hover desktop */
 .main-nav a:hover {
     background: #ddd;
     color: black;
@@ -155,7 +155,7 @@ body {
         transition: color 0.3s;
     }
 
-    /* Hover effect on mobile */
+    /* Hover di mobile */
     .main-nav a:hover {
         background: transparent;
         color: #ddd;
@@ -242,7 +242,7 @@ body {
     border: solid 2px rgb(243, 241, 241);
     position: absolute;
     color: white;
-    font-size: 100px;
+    font-size: 50px;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
@@ -266,6 +266,15 @@ body {
 .vision {
     text-align: center;
     padding: 20px;
+}
+.vision img {
+    margin-bottom: 25px; 
+    width: 800px;
+}
+.noted-vision01,
+.noted-vision02{
+    font-size: 20px;
+    font-weight: 500px;
 }
 
 .title-vision01 {
@@ -385,7 +394,7 @@ body {
 /* informasi */
 .sectionBar{
     background-color: white;
-    margin-top: 100px;
+    margin-top: 200px;
     height: 100px;
 }
 
@@ -402,7 +411,7 @@ body {
 .section03 {
     margin-top: -20px;
     background-color: white;
-    position: relative; /* Tambahkan properti position */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,7 +446,7 @@ body {
 
 .graph-index {
     text-align: center;
-    position: relative; /* Tambahkan properti position */
+    position: relative; 
 }
 
 .graph-index img {

@@ -6,17 +6,17 @@ function myFunction() {
         x.classList.add("responsive");
     }
 
-    // Adjust the layout of li elements in column mode
+
     var navList = document.querySelector(".nav-list");
     var liElements = navList.querySelectorAll("li");
 
     if (x.classList.contains("responsive")) {
-        // If responsive class is active, set li elements to display block
+
         liElements.forEach(function (li) {
             li.style.display = "block";
         });
     } else {
-        // If responsive class is not active, reset li elements display property
+
         liElements.forEach(function (li) {
             li.style.display = "";
         });
@@ -114,10 +114,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function showMessage() {
-    const notifDatabase = document.querySelector('.notif-database'); // Tambah titik (.)
-    const imgServer = document.querySelector('.graph-index img'); // Sesuaikan pemilihan elemen
+    const notifDatabase = document.querySelector('.notif-database');
+    const imgServer = document.querySelector('.graph-index img');
     imgServer.style.display = 'none';
-    notifDatabase.style.display = 'flex'; // Ganti block dengan flex
+    notifDatabase.style.display = 'flex';
 }
 
 
